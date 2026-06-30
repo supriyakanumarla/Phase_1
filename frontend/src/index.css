@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-canvas text-slate-100 font-sans antialiased;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(91, 141, 239, 0.06), transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(139, 107, 224, 0.05), transparent 40%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232834;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+:focus-visible {
+  outline: 2px solid #5b8def;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
