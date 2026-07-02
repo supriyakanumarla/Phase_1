@@ -21,6 +21,14 @@ class Settings(BaseSettings):
     database_url: str
 
     log_level: str = "INFO"
+    
+    # 👇 Add this
+    cors_origins: str = (
+        "http://localhost:5173,"
+        "http://127.0.0.1:5173,"
+        "http://localhost:5174,"
+        "http://127.0.0.1:5174"
+    )
 
 
 @lru_cache
